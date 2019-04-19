@@ -55,6 +55,11 @@ plugins:
   - jekyll-oembed
   - jekyll-seo-tag
 
+atom:
+    postDirs:
+        - _videos
+        - _demos
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
