@@ -55,10 +55,16 @@ plugins:
   - jekyll-oembed
   - jekyll-seo-tag
 
+collections:
+    - videos
+    - demos
+    - projects
+
 atom:
     postDirs:
         - _videos
         - _demos
+        - _projects
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
