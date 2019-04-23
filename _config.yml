@@ -52,7 +52,7 @@ plugins:
   - jekyll-paginate
   - jekyll-archives
   - jekyll-gist
-  - jekyll-oembed
+  - jekyll-youtube
   - jekyll-seo-tag
 
 collections:
