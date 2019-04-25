@@ -59,12 +59,14 @@ collections:
     - videos
     - demos
     - projects
+    - quotes
 
 atom:
     postDirs:
         - _videos
         - _demos
         - _projects
+        - _quotes
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

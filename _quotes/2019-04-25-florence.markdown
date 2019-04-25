@@ -1,0 +1,11 @@
+---
+layout: post
+title: "J'aurais pu parler d'autres projets: Auchan,Boulanger..."
+date: "2019-04-25 18:18:34 +0200"
+author:
+    title: "Sales"
+    company: "Smile "
+    name: "Florence Gustin"
+    image: null
+---
+mais ce que je souhaite mettre en avant, c'est l'écoute, l'enthousiasme mêlés à une bonne dose de créativité dont la DI a fait preuve. Je souhaite que pour 2019 ce soit décuplé et je remercie infiniment l'équipe pour son accompagnement.

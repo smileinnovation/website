@@ -61,6 +61,36 @@ layout: default
     </div>
 </section>
 {%- endif -%}
+{%- if site.demos.size > 0 -%}
+<section class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+        <div class="row">
+            <div class="wide column">
+                <h2 class="ui header">Demos</h2>
+                <div class="ui cards">
+                    {%- for demo in site.demos -%}
+                        <div class="ui card" href="{{_permalink}}" title="{{demo.title}}">
+                            {%-if demo.image -%}
+                                <div class="image">
+                                    <img src="{{demo.image}}" title="{{demo.description | prepend: "picture of"}}"/>
+                                </div>
+                            {%- endif -%}
+                            <div class="content">
+                                <div class="header">{{demo.title}}</div>
+                                <div class="description">{{demo.description | truncate: 120}}</div>
+                            </div>
+                            <div class="ui bottom attached button">
+                                <i class="eye icon"></i>
+                                Details
+                            </div>
+                        </div>
+                    {%- endfor -%}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{%- endif -%}
 <section class="ui vertical stripe segment">
     <div class="ui middle aligned stackable grid container">
         <div class="row">
@@ -133,22 +163,25 @@ layout: default
         </div>
     </div>
 </section>
+{%- if site.quotes.size > 0 -%}
 <section class="ui vertical stripe quote segment">
     <div class="ui equal width stackable internally celled grid">
         <div class="center aligned row">
-            <div class="column">
-                <h3>"What a Company"</h3>
-                <p>That is what they all say about us</p>
-            </div>
-            <div class="column">
-                <h3>"I shouldn't have gone with their competitor."</h3>
-                <p>
-                    <img src="https://source.unsplash.com/100x100/?people" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-                </p>
-            </div>
+            {%- for quote in site.quotes -%}
+                <div class="column">
+                    {%- if quote.title -%}
+                        <h3>{{quote.title}}</h3>
+                        <p>{{quote.content}}</p>
+                    {%- else -%}
+                        <h3>{{ quote.content }}</h3>
+                    {%- endif -%}
+                    <img src="{{quote.author.image | default: "https://source.unsplash.com/200x200/?people"}}" class="ui avatar image"> <b>{{quote.author.name}}</b> {{quote.author.title}} {{quote.author.company}}
+                </div>
+            {%- endfor -%}
         </div>
     </div>
 </section>
+{%- endif -%}
 <section class="ui vertical stripe segment">
     <div class="ui text container">
         <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
