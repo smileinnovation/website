@@ -1,0 +1,165 @@
+---
+layout: default
+---
+{%- if site.videos.size > 0 -%}
+<section class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+        <div class="row">
+            <div class="wide column">
+                <h2 class="ui header">Videos</h2>
+                <div class="ui link cards">
+                    {%- for video in site.videos -%}
+                        <a class="ui card" href="{{_permalink}}" title="{{video.title}}">
+                            {%- if video.image -%}
+                                <div class="image">
+                                    <img src="{{video.image}}" title="{{video.description | prepend: "picture of"}}"/>
+                                </div>
+                            {%- endif -%}
+                            <div class="content">
+                                <div class="header">{{video.title}}</div>
+                                <div class="description">{{video.description | truncate: 120}}</div>
+                            </div>
+                            <div class="ui bottom attached button">
+                                <i class="eye icon"></i>
+                                Details
+                            </div>
+                        </a>
+                    {%- endfor -%}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{%- endif -%}
+{%- if site.galleries.size > 0 -%}
+<section class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+        <div class="row">
+            <div class="wide column">
+                <h2 class="ui header">Photo Galleries</h2>
+                <div class="ui cards">
+                    {%- for gallery in site.galleries -%}
+                        <div class="ui card" href="{{_permalink}}" title="{{gallery.title}}">
+                            {%-if gallery.image -%}
+                                <div class="image">
+                                    <img src="{{gallery.image}}" title="{{gallery.description | prepend: "picture of"}}"/>
+                                </div>
+                            {%- endif -%}
+                            <div class="content">
+                                <div class="header">{{gallery.title}}</div>
+                                <div class="description">{{gallery.description | truncate: 120}}</div>
+                            </div>
+                            <div class="ui bottom attached button">
+                                <i class="eye icon"></i>
+                                Details
+                            </div>
+                        </div>
+                    {%- endfor -%}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{%- endif -%}
+<section class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+        <div class="row">
+            <div class="wide column">
+                <h2 class="ui header">Charte</h3>
+                <p>{{page.charte.description}}</p>
+                <h3 class="ui header">Logo</h4>
+                <div class="ui cards">
+                    <div class="ui card">
+                        <div class="image"><img src="assets/logo/badge/sponsoredby/quadri/sponsoredby_smileinovation.png" alt="Smile Innovation badge"></div>
+                        <div class="content">
+                            <div class="header">Badge</div>
+                            <div class="description">That's our regular logo we are using on the daily basis. It's available in PDF, PNG and JPEG in both quadri or black &amp; white. EPS is available in Pantone&reg; and black &amp; white.</div>
+                        </div>
+                        <div class="extra content">
+                            <div class="ui labeled icon dropdown button">
+                                <i class="download icon"></i>
+                                <div class="text">Download</div>
+                                <div class="menu">
+                                    <div class="item">
+                                        <i class="dropdown icon"></i>Quadri
+                                        <div class="menu">
+                                            <a href="assets/logo/badge/sponsoredby/quadri/sponsoredby_smileinovation.pdf" class="item">PDF</a>
+                                            <a href="assets/logo/badge/sponsoredby/quadri/sponsoredby_smileinovation.eps" class="item">
+                                                <div class="description">(pantone)</div>
+                                                EPS
+                                            </a>
+                                            <a href="assets/logo/badge/sponsoredby/quadri/sponsoredby_smileinovation.png" class="item">PNG</a>
+                                            <a href="assets/logo/badge/sponsoredby/quadri/sponsoredby_smileinovation.jpg" class="item">JPEG</a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <i class="dropdown icon"></i>Monochrome
+                                        <div class="menu">
+                                            <a href="assets/logo/badge/sponsoredby/Noir:blanc/sponsoredby_smileinovation_n_b.pdf" class="item">PDF</a>
+                                            <a href="assets/logo/badge/sponsoredby/Noir:blanc/sponsoredby_smileinovation_n_b.eps" class="item">
+                                                <div class="description">(pantone)</div>
+                                                EPS
+                                            </a>
+                                            <a href="assets/logo/badge/sponsoredby/Noir:blanc/sponsoredby_smileinovation_n_b.png" class="item">PNG</a>
+                                            <a href="assets/logo/badge/sponsoredby/Noir:blanc/sponsoredby_smileinovation_n_b.jpg" class="item">JPEG</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+        <div class="row">
+            <div class="eight wide column">
+                <h3 class="ui header">We Help Companies and Companions</h3>
+                <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
+                <h3 class="ui header">We Make Bananas That Can Dance</h3>
+                <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
+            </div>
+            <div class="six wide right floated column">
+                <img src="https://source.unsplash.com/random/800x600" class="ui large bordered rounded image">
+            </div>
+        </div>
+        <div class="row">
+            <div class="center aligned column">
+                <a class="ui huge button">Check Them Out</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ui vertical stripe quote segment">
+    <div class="ui equal width stackable internally celled grid">
+        <div class="center aligned row">
+            <div class="column">
+                <h3>"What a Company"</h3>
+                <p>That is what they all say about us</p>
+            </div>
+            <div class="column">
+                <h3>"I shouldn't have gone with their competitor."</h3>
+                <p>
+                    <img src="https://source.unsplash.com/100x100/?people" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ui vertical stripe segment">
+    <div class="ui text container">
+        <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
+        <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your
+            attention.</p>
+        <a class="ui large button">Read More</a>
+        <h4 class="ui horizontal header divider">
+            <a href="#">Case Studies</a>
+        </h4>
+        <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
+        <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
+        <a class="ui large button">I'm Still Quite Interested</a>
+    </div>
+</section>
