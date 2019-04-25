@@ -91,6 +91,7 @@ layout: default
     </div>
 </section>
 {%- endif -%}
+{%- if site.data.logos -%}
 <section class="ui vertical stripe segment">
     <div class="ui middle aligned stackable grid container">
         <div class="row">
@@ -99,50 +100,41 @@ layout: default
                 <p>{{page.charte.description}}</p>
                 <h3 class="ui header">Logo</h4>
                 <div class="ui cards">
+                    {%- for logo in site.data.logos -%}
                     <div class="ui card">
-                        <div class="image"><img src="assets/logo/badge/sponsoredby/quadri/sponsoredby_smileinovation.png" alt="Smile Innovation badge"></div>
+                        {%- assign image = logo.downloads[0].files -%}
+                        <div class="image"><img src="{{image | last}}" alt="Smile Innovation badge"></div>
                         <div class="content">
-                            <div class="header">Badge</div>
-                            <div class="description">That's our regular logo we are using on the daily basis. It's available in PDF, PNG and JPEG in both quadri or black &amp; white. EPS is available in Pantone&reg; and black &amp; white.</div>
+                            <div class="header">{{logo.title}}</div>
+                            <div class="description">{{logo.description}}</div>
                         </div>
                         <div class="extra content">
                             <div class="ui labeled icon dropdown button">
                                 <i class="download icon"></i>
                                 <div class="text">Download</div>
                                 <div class="menu">
+                                    {%- for download in logo.downloads -%}
                                     <div class="item">
-                                        <i class="dropdown icon"></i>Quadri
+                                        <i class="dropdown icon"></i>{{ download.title | escape}}
                                         <div class="menu">
-                                            <a href="assets/logo/badge/sponsoredby/quadri/sponsoredby_smileinovation.pdf" class="item">PDF</a>
-                                            <a href="assets/logo/badge/sponsoredby/quadri/sponsoredby_smileinovation.eps" class="item">
-                                                <div class="description">(pantone)</div>
-                                                EPS
-                                            </a>
-                                            <a href="assets/logo/badge/sponsoredby/quadri/sponsoredby_smileinovation.png" class="item">PNG</a>
-                                            <a href="assets/logo/badge/sponsoredby/quadri/sponsoredby_smileinovation.jpg" class="item">JPEG</a>
+                                            {%- for file in download.files -%}
+                                            {%- assign ext = file | split:"." -%}
+                                            <a href="{{file}}" class="item">{{ext.last | upcase}}</a>
+                                            {%- endfor -%}
                                         </div>
                                     </div>
-                                    <div class="item">
-                                        <i class="dropdown icon"></i>Monochrome
-                                        <div class="menu">
-                                            <a href="assets/logo/badge/sponsoredby/Noir:blanc/sponsoredby_smileinovation_n_b.pdf" class="item">PDF</a>
-                                            <a href="assets/logo/badge/sponsoredby/Noir:blanc/sponsoredby_smileinovation_n_b.eps" class="item">
-                                                <div class="description">(pantone)</div>
-                                                EPS
-                                            </a>
-                                            <a href="assets/logo/badge/sponsoredby/Noir:blanc/sponsoredby_smileinovation_n_b.png" class="item">PNG</a>
-                                            <a href="assets/logo/badge/sponsoredby/Noir:blanc/sponsoredby_smileinovation_n_b.jpg" class="item">JPEG</a>
-                                        </div>
-                                    </div>
+                                    {%- endfor -%}
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {%- endfor -%}
                 </div>
             </div>
         </div>
     </div>
 </section>
+{%- endif -%}
 <section class="ui vertical stripe segment">
     <div class="ui middle aligned stackable grid container">
         <div class="row">
