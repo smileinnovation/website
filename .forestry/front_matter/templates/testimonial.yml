@@ -7,23 +7,25 @@ fields:
   label: layout
 - type: text
   name: title
-  label: title
+  label: Heading
 - type: datetime
   name: date
-  label: date
+  label: Post Date
 - type: field_group
   name: author
   label: author
   fields:
   - type: text
     name: title
-    label: title
+    label: Position
   - type: text
     name: company
-    label: company
+    label: Company
   - type: text
     name: name
-    label: name
-  - type: text
-    name: image
-    label: image
+    label: Name
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: Author's Picture
