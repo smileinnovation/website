@@ -4,24 +4,21 @@
             <div class="three wide column">
                 <h4 class="ui inverted header">About</h4>
                 <div class="ui inverted link list">
-                    <a href="#" class="item">Sitemap</a>
-                    <a href="#" class="item">Contact Us</a>
-                    <a href="#" class="item">Religious Ceremonies</a>
-                    <a href="#" class="item">Gazebo Plans</a>
+                    <a href="mailto:{{site.email}}" class="item">Contact Us</a>
                 </div>
             </div>
             <div class="three wide column">
-                <h4 class="ui inverted header">Services</h4>
+                <h4 class="ui inverted header">Elsewhere</h4>
                 <div class="ui inverted link list">
-                    <a href="#" class="item">Banana Pre-Order</a>
-                    <a href="#" class="item">DNA FAQ</a>
-                    <a href="#" class="item">How To Access</a>
-                    <a href="#" class="item">Favorite X-Men</a>
+                    {%- if.site.social.medium -%}<a href="{{site.social.medium | prepend "https://medium.com/"}}" class="item">Medium</a>{%- endif -%}
+                    {%- if site.social.newsletter -%}<a href="{{site.social.newsletter}}" class="item">Newsletter</a>{%- endif -%}
+                    {%- if site.twitter.username -%}<a href="{{site.twitter.username | prepend: "https://twitter.com/"}}" class="item">Twitter</a>{%- endif -%}
+                    {%- if site.social.youtube -%}<a href="{{site.social.youtube}}" class="item">Youtube</a>{%- endif -%}
                 </div>
             </div>
             <div class="seven wide column">
-                <h4 class="ui inverted header">Footer Header</h4>
-                <p>{{footer_legal_note type=html}}</p>
+                <h4 class="ui inverted header">Our lawyer made us write this</h4>
+                <p>{{site.footer_legal_note}}</p>
             </div>
         </div>
     </div>
