@@ -164,10 +164,10 @@ layout: default
             {%- for quote in site.quotes -%}
                 <div class="column">
                     {%- if quote.title -%}
-                        <h3>{{quote.title}}</h3>
+                        <h2>{{quote.title}}</h2>
                         <p>{{quote.content}}</p>
                     {%- else -%}
-                        <h3>{{ quote.content }}</h3>
+                        <h2>{{ quote.content }}</h2>
                     {%- endif -%}
                     <img src="{{quote.author.image | default: "https://source.unsplash.com/200x200/?people"}}" class="ui avatar image"> <b>{{quote.author.name}}</b> {{quote.author.title}} {{quote.author.company}}
                 </div>
