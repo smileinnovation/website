@@ -41,3 +41,5 @@ fields:
   name: layout
   label: layout
   default: post
+pages:
+- _quotes/2019-04-25-florence.markdown
