@@ -48,7 +48,8 @@ lang: en_US
 
 # Build settings
 markdown: kramdown
-theme: minima
+sass:
+    style: compressed
 plugins:
   - jekyll-feed
   - jekyll-paginate

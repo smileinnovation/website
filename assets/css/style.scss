@@ -1,0 +1,29 @@
+---
+---
+@import "colors";
+
+$header-font: Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$body-font: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+body{
+    font-family: $body-font;
+}
+.ui{
+    &.button{
+        font-family: $header-font;
+    }
+    &.header,h1,h2,h3,h4,h5,h6{
+        font-family:  $header-font;
+        font-weight: 300;
+        font-style: normal;
+        &:not(.inverted){
+            color: $primary;
+        }
+    }
+
+}
+@each $heading,$size in (h1,3em),(h2,2em),(h3,1.8em){
+    #{$heading}.ui.header {
+        font-size: $size;
+    }
+}
