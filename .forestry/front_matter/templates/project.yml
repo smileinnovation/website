@@ -38,3 +38,5 @@ fields:
   name: layout
   label: layout
   default: post
+pages:
+- _demos/2019-04-19-asset-tracking-truck.markdown
