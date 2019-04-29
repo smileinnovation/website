@@ -1,0 +1,28 @@
+---
+label: Videos
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: image
+  label: image
+- type: text
+  name: author
+  label: author
+- type: text
+  name: lang
+  label: lang
+- type: text
+  name: youtube_url
+  label: youtube_url
