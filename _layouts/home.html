@@ -2,7 +2,7 @@
 layout: default
 ---
 {%- if site.videos.size > 0 -%}
-<section class="ui vertical stripe segment">
+<section class="ui vertical stripe segment" id="videos">
     <div class="ui middle aligned stackable grid container">
         <div class="row">
             <div class="wide column">
@@ -32,7 +32,7 @@ layout: default
 </section>
 {%- endif -%}
 {%- if site.galleries.size > 0 -%}
-<section class="ui vertical stripe segment">
+<section class="ui vertical stripe segment" id="galleries">
     <div class="ui middle aligned stackable grid container">
         <div class="row">
             <div class="wide column">
@@ -62,7 +62,7 @@ layout: default
 </section>
 {%- endif -%}
 {%- if site.demos.size > 0 -%}
-<section class="ui vertical stripe segment">
+<section class="ui vertical stripe segment" id="demos">
     <div class="ui middle aligned stackable grid container">
         <div class="row">
             <div class="wide column">
@@ -92,7 +92,7 @@ layout: default
 </section>
 {%- endif -%}
 {%- if site.data.logos -%}
-<section class="ui vertical stripe segment">
+<section class="ui vertical stripe segment" id="charte">
     <div class="ui middle aligned stackable grid container">
         <div class="row">
             <div class="wide column">
@@ -158,7 +158,7 @@ layout: default
 </section>
 {%- endcomment -%}
 {%- if site.quotes.size > 0 -%}
-<section class="ui vertical stripe quote segment">
+<section class="ui vertical stripe quote segment" id="testimonials">
     <div class="ui equal width stackable internally celled grid">
         <div class="center aligned row">
             {%- for quote in site.quotes -%}
