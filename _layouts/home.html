@@ -7,13 +7,19 @@ layout: default
         <div class="row">
             <div class="wide column">
                 <h2 class="ui header">Videos</h2>
-                <div class="ui link cards">
+                <div class="ui link two column cards">
                     {%- for video in site.videos -%}
                         <a class="ui card" href="{{_permalink}}" title="{{video.title}}">
-                            {%- if video.image -%}
+                            {%- if video.youtube_url -%}
+                            <span class="image">
+                                {%- youtube youtube_url -%}
+                            </span>
+                            {%- else -%}
+                                {% if video.image %}
                                 <div class="image">
                                     <img src="{{video.image}}" title="{{video.description | prepend: "picture of"}}"/>
                                 </div>
+                                {% endif %}
                             {%- endif -%}
                             <div class="content">
                                 <div class="header">{{video.title}}</div>
@@ -67,7 +73,7 @@ layout: default
         <div class="row">
             <div class="wide column">
                 <h2 class="ui header">Demos</h2>
-                <div class="ui cards">
+                <div class="ui three column cards">
                     {%- for demo in site.demos -%}
                         <div class="ui card" href="{{_permalink}}" title="{{demo.title}}">
                             {%-if demo.image -%}
