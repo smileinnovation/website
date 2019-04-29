@@ -3,23 +3,37 @@ label: Project
 hide_body: true
 fields:
 - type: text
-  name: layout
-  label: layout
-- type: text
   name: title
-  label: title
+  label: Project Name
+  config:
+    required: true
 - type: datetime
   name: date
-  label: date
+  label: Date
+  config:
+    required: true
+  default: now
 - type: text
   name: description
-  label: description
-- type: text
-  name: image
-  label: image
+  label: Description
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
 - type: text
   name: author
-  label: author
+  label: Author
+  description: Use the your shortname, it will be matched with our data/members.yml
+  config:
+    required: true
 - type: text
   name: lang
-  label: lang
+  label: Language
+  config:
+    required: true
+  default: en
+- type: text
+  name: layout
+  label: layout
+  default: post
