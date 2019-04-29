@@ -2,17 +2,19 @@
 layout: default
 ---
 {%- if site.videos.size > 0 -%}
-<section class="ui vertical stripe segment" id="videos">
+<section class="ui basic segment" id="videos">
     <div class="ui middle aligned stackable grid container">
         <div class="row">
             <div class="wide column">
-                <h2 class="ui header">Videos</h2>
+                <h2 class="ui horizontal divider header">
+                    Videos
+                </h2>
                 <div class="ui link two column cards">
                     {%- for video in site.videos -%}
                         <a class="ui card" href="{{_permalink}}" title="{{video.title}}">
                             {%- if video.youtube_url -%}
                             <span class="image">
-                                {%- youtube youtube_url -%}
+                                {%- youtube video.youtube_url -%}
                             </span>
                             {%- else -%}
                                 {% if video.image %}
@@ -38,11 +40,13 @@ layout: default
 </section>
 {%- endif -%}
 {%- if site.galleries.size > 0 -%}
-<section class="ui vertical stripe segment" id="galleries">
+<section class="ui basic segment" id="galleries">
     <div class="ui middle aligned stackable grid container">
         <div class="row">
             <div class="wide column">
-                <h2 class="ui header">Photo Galleries</h2>
+                <h2 class="ui horizontal divider header">
+                    Photos Galleries
+                </h2>
                 <div class="ui cards">
                     {%- for gallery in site.galleries -%}
                         <div class="ui card" href="{{_permalink}}" title="{{gallery.title}}">
@@ -68,11 +72,13 @@ layout: default
 </section>
 {%- endif -%}
 {%- if site.demos.size > 0 -%}
-<section class="ui vertical stripe segment" id="demos">
+<section class="ui basic segment" id="demos">
     <div class="ui middle aligned stackable grid container">
         <div class="row">
             <div class="wide column">
-                <h2 class="ui header">Demos</h2>
+                <h2 class="ui horizontal divider header">
+                    Demos
+                </h2>
                 <div class="ui three column cards">
                     {%- for demo in site.demos -%}
                         <div class="ui card" href="{{_permalink}}" title="{{demo.title}}">
@@ -98,11 +104,13 @@ layout: default
 </section>
 {%- endif -%}
 {%- if site.data.logos -%}
-<section class="ui vertical stripe segment" id="charte">
+<section class="ui basic segment" id="charte">
     <div class="ui middle aligned stackable grid container">
         <div class="row">
             <div class="wide column">
-                <h2 class="ui header">Charte</h3>
+                <h2 class="ui horizontal divider header">
+                    Charte
+                </h2>
                 <p>{{page.charte.description}}</p>
                 <h3 class="ui header">Logo</h4>
                 <div class="ui cards">
@@ -165,6 +173,9 @@ layout: default
 {%- endcomment -%}
 {%- if site.quotes.size > 0 -%}
 <section class="ui vertical stripe quote segment" id="testimonials">
+    <h2 class="ui horizontal divider header">
+        Testimonials
+    </h2>
     <div class="ui equal width stackable internally celled grid">
         <div class="center aligned row">
             {%- for quote in site.quotes -%}
@@ -182,7 +193,7 @@ layout: default
     </div>
 </section>
 {%- endif -%}
-<section class="ui vertical stripe segment">
+<section class="ui basic segment">
     <div class="ui text container">
         <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
         <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your
