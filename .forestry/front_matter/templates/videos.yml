@@ -3,26 +3,32 @@ label: Videos
 hide_body: true
 fields:
 - type: text
-  name: layout
-  label: layout
+  name: youtube_url
+  label: Youtube URL
+  config:
+    required: true
 - type: text
   name: title
-  label: title
+  label: Title
 - type: datetime
   name: date
-  label: date
+  label: Date
+  default: now
 - type: textarea
   name: description
-  label: description
-- type: text
-  name: image
-  label: image
+  label: Description
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
 - type: text
   name: author
-  label: author
+  label: Author (you?)
 - type: text
   name: lang
-  label: lang
+  label: Language of this post
+  default: en
 - type: text
-  name: youtube_url
-  label: youtube_url
+  name: layout
+  label: layout
