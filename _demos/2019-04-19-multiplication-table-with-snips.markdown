@@ -2,7 +2,9 @@
 layout: post
 title: Multiplication table with Snips
 date: 2019-04-19 14:08:20 +0200
-description: ''
+description: Using privacy-by-design solution Snips to create an assistant skill,
+  running locally to help your child learning multiplication table. Behind the fun
+  test, the privacy is the real deal here.
 image: "/uploads/2019/04/29/0_rXmmPA0UJ3mYW7XO.jpeg"
 author: alrou
 lang: en_US
