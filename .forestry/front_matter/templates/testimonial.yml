@@ -3,14 +3,17 @@ label: Testimonial
 hide_body: false
 fields:
 - type: text
-  name: layout
-  label: layout
-- type: text
   name: title
   label: Heading
+  config:
+    required: true
 - type: datetime
   name: date
   label: Post Date
+  config:
+    display_utc: false
+    required: true
+  default: now
 - type: field_group
   name: author
   label: author
@@ -21,11 +24,20 @@ fields:
   - type: text
     name: company
     label: Company
+    config:
+      required: true
   - type: text
     name: name
     label: Name
+    config:
+      required: true
   - name: image
     type: file
     config:
       maxSize: 250
     label: Author's Picture
+    description: If you don't provide it, I'll use random picture from unsplash
+- type: text
+  name: layout
+  label: layout
+  default: post
