@@ -39,4 +39,5 @@ fields:
   label: layout
   default: post
 pages:
+- _demos/2019-04-19-talking-to-your-coffee-machine-with-snips.markdown
 - _demos/2019-04-19-asset-tracking-truck.markdown
