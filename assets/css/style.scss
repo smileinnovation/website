@@ -8,6 +8,10 @@ $body-font: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 body{
     font-family: $body-font;
 }
+
+.hero{
+    padding: 2em 0;
+}
 .ui{
     &.button{
         font-family: $header-font;
@@ -25,5 +29,62 @@ body{
 @each $heading,$size in (h1,3em),(h2,2em),(h3,1.8em){
     #{$heading}.ui.header {
         font-size: $size;
+    }
+}
+
+// Background video
+//
+
+.homepage-hero-module {
+	border-right: none;
+	border-left: none;
+	position: relative;
+    .ui.container{
+        z-index: 200;
+    }
+}
+.no-video {
+	.video-container {
+		video {
+			display: none;
+		}
+	}
+}
+.touch {
+	.video-container {
+		video {
+			display: none;
+		}
+	}
+}
+.video-container {
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background: #000;
+	.filter {
+		z-index: 100;
+		position: absolute;
+		background: rgba(0, 0, 0, 0.4);
+		width: 100%;
+        height: 100%;
+	}
+	video {
+		position: absolute;
+		z-index: 0;
+		bottom: 0;
+        left:0;
+	}
+	video.fillWidth {
+		width: 100%;
+	}
+    &~div{
+        position:inherit;
+        .ui.secondary.inverted.pointing.menu{
+            border:none;
+        }
     }
 }
