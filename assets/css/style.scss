@@ -8,6 +8,12 @@ $body-font: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 body{
     font-family: $body-font;
 }
+a{
+    color: $secondary;
+    &:hover{
+        color: $secondary-alt;
+    }
+}
 
 .hero{
     padding: 2em 0;
@@ -86,5 +92,13 @@ body{
         .ui.secondary.inverted.pointing.menu{
             border:none;
         }
+    }
+}
+#news{
+    article h3 a{
+        color: $primary;
+    }
+    .container{
+        margin-bottom: 2em;
     }
 }
