@@ -15,6 +15,12 @@ layout: default
                 <div class="detail"><i class="icon tags"></i></div>
             </div>
             {%- endif -%}
+            {% if page.author %}
+            <a class="ui label" href="{{ site.data.authors[page.author].twitter | prepend: "https://twitter.com/"}}">
+                {{site.data.authors[page.author].twitter | prepend : "@"}}
+                <div class="detail"><i class="icon blue twitter"></i></div>
+            </a>
+            {% endif %}
             <div class="ui label">
                 {%- assign date_format = site.date_format | default: "%b %e, %Y" -%}
                 {{page.date | date: date_format}}

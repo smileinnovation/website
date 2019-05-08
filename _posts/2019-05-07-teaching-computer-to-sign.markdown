@@ -3,6 +3,7 @@ layout: post
 title: "Teaching computer to sign"
 category: Projects
 tags: [tech4good, computer vision]
+author: thmil
 date: "2019-05-07 16:17:18 +0200"
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
