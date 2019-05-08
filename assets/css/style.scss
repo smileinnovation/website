@@ -111,17 +111,21 @@ a {
     }
 }
 // posts single page
-#posts{
+body > .container{
     margin: 2em auto;
+    .container{margin-bottom: 2em;}
+}
+#posts,
+#videos,
+#demos{
     .sub.header{
         margin:1em auto;
         .label:first-of-type{
             margin-left: 0;
         }
     }
-    .container{margin-bottom: 2em;}
     .image{margin-bottom: 1em;}
-    .teal{background-color: $mountain-meadow !important}
-    .blue{background-color: $medium-slate-blue !important}
+    .teal:not(i){background-color: $mountain-meadow !important}
+    .blue:not(i){background-color: $medium-slate-blue !important}
     .label{margin-top:.5em;}
 }
