@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+{%- if page.youtube_url -%}
+<aside class="ui container video">
+ {% youtube page.youtube_url %}
+</aside>
+{%- endif -%}
 <article class="ui text container h-entry" itemscope itemtype="http://schema.org/BlogPosting">
     <h1 class="ui header">
         <span class="p-name" itemprop="name headline">{{page.title | escape}}</span>
