@@ -53,17 +53,17 @@ layout: default
 {% endif %}
 <div class="ui text container">
     <div class="ui right aligned grid">
-        {% if page.previous.url %}
+        {% if page.next.url %}
         <div class="left floated left aligned height wide column">
-            <a class="ui basic button" href="{{page.previous.url}}">
-                <i class="icon arrow left"></i> {{page.previous.title}}
+            <a class="ui basic button" href="{{page.next.url}}">
+                <i class="icon arrow left"></i> {{page.next.title}}
             </a>
         </div>
         {% endif %}
-        {% if page.next.url %}
+        {% if page.previous.url %}
         <div class="right floated right aligned height wide column">
-            <a class="ui basic button" href="{{page.next.url}}">
-                {{page.next.title}} <i class="icon arrow right"></i>
+            <a class="ui basic button" href="{{page.previous.url}}">
+                {{page.previous.title}} <i class="icon arrow right"></i>
             </a>
         </div>
         {% endif %}
