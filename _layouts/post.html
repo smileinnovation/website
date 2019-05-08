@@ -16,7 +16,7 @@ layout: default
             </div>
             {%- endif -%}
             <div class="ui label">
-                {{page.date | date: "%b %e, %Y"}}
+                {{page.date | date: "%b %e, %Y"}}
                 <div class="detail"><i class="icon calendar"></i></div>
             </div>
              <div class="ui label">
@@ -51,3 +51,21 @@ layout: default
     </div>
 </section>
 {% endif %}
+<div class="ui text container">
+    <div class="ui right aligned grid">
+        {% if page.previous.url %}
+        <div class="left floated left aligned height wide column">
+            <a class="ui basic button" href="{{page.previous.url}}">
+                <i class="icon arrow left"></i> {{page.previous.title}}
+            </a>
+        </div>
+        {% endif %}
+        {% if page.next.url %}
+        <div class="right floated right aligned height wide column">
+            <a class="ui basic button" href="{{page.next.url}}">
+                {{page.next.title}} <i class="icon arrow right"></i>
+            </a>
+        </div>
+        {% endif %}
+    </div>
+</div>
