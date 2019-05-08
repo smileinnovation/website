@@ -36,6 +36,9 @@ layout: default
     <img src="{{page.image}}" alt="" class="ui rounded image">
     {% endif %}
     <div class="e-content" itemprop="articleBody">
+        {% if page.description %}
+        {{page.description | escape}}
+        {% endif %}
         {{content}}
     </div>
 </article>
