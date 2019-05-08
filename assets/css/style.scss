@@ -8,10 +8,18 @@ $body-font: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 body{
     font-family: $body-font;
 }
-a{
+a {
     color: $secondary;
     &:hover{
         color: $secondary-alt;
+    }
+}
+.ui.list>.item a.header {
+    color: $mountain-meadow !important;
+    transition: color .2s;
+    &:hover{
+        color: $algae-green !important;
+        transition: color 0.2s;
     }
 }
 
@@ -101,4 +109,19 @@ a{
     .container{
         margin-bottom: 2em;
     }
+}
+// posts single page
+#posts{
+    margin: 2em auto;
+    .sub.header{
+        margin:1em auto;
+        .label:first-of-type{
+            margin-left: 0;
+        }
+    }
+    .container{margin-bottom: 2em;}
+    .image{margin-bottom: 1em;}
+    .teal{background-color: $mountain-meadow !important}
+    .blue{background-color: $medium-slate-blue !important}
+    .label{margin-top:.5em;}
 }

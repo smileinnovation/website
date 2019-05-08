@@ -1,4 +1,53 @@
+---
+layout: default
+---
+<article class="ui text container h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <h1 class="ui header">
+        <span class="p-name" itemprop="name headline">{{page.title | escape}}</span>
+        <div class="sub header">
+            <div class="ui teal label">
+                {{page.category | default: "News" | escape}}
+                <div class="detail"><i class="icon folder"></i></div>
+            </div>
+            {%- if page.tags.size > 0 -%}
+            <div class="ui blue label">
+                {% for tag in page.tags %} {{tag | prepend: "#" | append: " "}} {% endfor %}
+                <div class="detail"><i class="icon tags"></i></div>
+            </div>
+            {%- endif -%}
+            <div class="ui label">
+                {{page.date | date: "%b %e, %Y"}}
+                <div class="detail"><i class="icon calendar"></i></div>
+            </div>
              <div class="ui label">
                  <span class="reading-time">...</span>
                  <div class="detail"><i class="icon hourglass half"></i></div>
              </div>
+        </div>
+    </h1>
+    {% if page.image %}
+    <img src="{{page.image}}" alt="" class="ui rounded image">
+    {% endif %}
+    <div class="e-content" itemprop="articleBody">
+        {{content}}
+    </div>
+</article>
+
+{% if page.attachments %}
+<section class="ui text container">
+    <h3 class="ui header">Attachment(s)</h3>
+    <div class="ui list">
+        {% for attachment in page.attachments %}
+        <div class="item">
+            <i class="file {{attachment.type}} outline icon"></i>
+            <div class="content">
+                <a href="{{attachment.file}}" class="header">
+                    {{attachment.name}}
+                </a>
+                <div class="description">{{attachment.type | capitalize}} document</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
