@@ -11,7 +11,7 @@ layout: default
                 </h2>
                 <div class="ui link two column cards">
                     {%- for video in site.videos -%}
-                        <a class="ui card" href="{{_permalink}}" title="{{video.title}}">
+                        <a class="ui card" href="{{video.url}}" title="{{video.title}}">
                             {%- if video.youtube_url -%}
                             <span class="image">
                                 {%- youtube video.youtube_url -%}
