@@ -10,7 +10,7 @@ layout: default
                     Videos
                 </h2>
                 <div class="ui link two column cards">
-                    {%- for video in site.videos -%}
+                    {%- for video in site.videos reversed -%}
                         <a class="ui card" href="{{video.url}}" title="{{video.title}}">
                             {%- if video.youtube_url -%}
                             <span class="image">
@@ -48,7 +48,7 @@ layout: default
                     Photos Galleries
                 </h2>
                 <div class="ui cards">
-                    {%- for gallery in site.galleries -%}
+                    {%- for gallery in site.galleries reversed -%}
                         <div class="ui card" href="{{gallery.url}}" title="{{gallery.title}}">
                             {%-if gallery.image -%}
                                 <div class="image">
@@ -80,7 +80,7 @@ layout: default
                     Demos
                 </h2>
                 <div class="ui three column cards">
-                    {%- for demo in site.demos -%}
+                    {%- for demo in site.demos reversed -%}
                         <a class="ui card" href="{{demo.url}}" title="{{demo.title}}">
                             {%-if demo.image -%}
                                 <div class="image">
@@ -178,7 +178,7 @@ layout: default
     </h2>
     <div class="ui equal width stackable internally celled grid">
         <div class="center aligned row">
-            {%- for quote in site.quotes -%}
+            {%- for quote in site.quotes reversed -%}
                 <div class="column">
                     {%- if quote.title -%}
                         <h2>{{quote.title}}</h2>
