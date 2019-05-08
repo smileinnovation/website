@@ -10,10 +10,12 @@ layout: default
     <h1 class="ui header">
         <span class="p-name" itemprop="name headline">{{page.title | escape}}</span>
         <div class="sub header">
+            {%- if page.collection == "posts" -%}
             <div class="ui teal label">
                 {{page.category | default: "News" | escape}}
                 <div class="detail"><i class="icon folder"></i></div>
             </div>
+            {%- endif -%}
             {%- if page.tags.size > 0 -%}
             <div class="ui blue label">
                 {% for tag in page.tags %} {{tag | prepend: "#" | append: " "}} {% endfor %}
