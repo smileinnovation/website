@@ -49,7 +49,7 @@ layout: default
                 </h2>
                 <div class="ui cards">
                     {%- for gallery in site.galleries -%}
-                        <div class="ui card" href="{{_permalink}}" title="{{gallery.title}}">
+                        <div class="ui card" href="{{gallery.url}}" title="{{gallery.title}}">
                             {%-if gallery.image -%}
                                 <div class="image">
                                     <img src="{{gallery.image}}" title="{{gallery.description | prepend: "picture of"}}"/>
@@ -81,7 +81,7 @@ layout: default
                 </h2>
                 <div class="ui three column cards">
                     {%- for demo in site.demos -%}
-                        <div class="ui card" href="{{_permalink}}" title="{{demo.title}}">
+                        <a class="ui card" href="{{demo.url}}" title="{{demo.title}}">
                             {%-if demo.image -%}
                                 <div class="image">
                                     <img src="{{demo.image}}" title="{{demo.description | prepend: "picture of"}}"/>
@@ -89,13 +89,13 @@ layout: default
                             {%- endif -%}
                             <div class="content">
                                 <div class="header">{{demo.title}}</div>
-                                <div class="description">{{demo.description | truncate: 120}}</div>
+                                <div class="description">{{demo.description | escape | truncate: 120}}</div>
                             </div>
                             <div class="ui bottom attached button">
                                 <i class="eye icon"></i>
                                 Details
                             </div>
-                        </div>
+                        </a>
                     {%- endfor -%}
                 </div>
             </div>
