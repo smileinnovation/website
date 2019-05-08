@@ -16,7 +16,8 @@ layout: default
             </div>
             {%- endif -%}
             <div class="ui label">
-                {{page.date | date: "%b %e, %Y"}}
+                {%- assign date_format = site.date_format | default: "%b %e, %Y" -%}
+                {{page.date | date: date_format}}
                 <div class="detail"><i class="icon calendar"></i></div>
             </div>
              <div class="ui label">

@@ -25,6 +25,7 @@ footer_legal_note: >-
   If you want to report anything, please write to thibault.milan@smile.fr .
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://innovation.smile.eu" # the base hostname & protocol for your site, e.g. http://example.com
+date_format: "%b %e, %Y"
 
 twitter:
     username : groupesmile
@@ -58,12 +59,18 @@ plugins:
   - jekyll-youtube
   - jekyll-seo-tag
 
+# Collection configuration
 collections:
-    - videos
-    - demos
-    - projects
-    - quotes
+    videos:
+        output: true
+    demos:
+        output: true
+    projects:
+        output: true
+    quotes:
+        output: false
 
+# Atom Related configuration
 atom:
     postDirs:
         - _videos

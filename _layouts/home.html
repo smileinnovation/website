@@ -204,7 +204,8 @@ layout: default
                 <h3 class="ui header">
                     <a href="{{post.url}}" title="Read {{post.title}}">{{post.title}}</a>
                     <div class="sub header">
-                        {{post.date | date: "%b %e, %Y"}} - {{post.category | default: News}}
+                        {%- assign date_format = site.date_format | default: "%b %e, %Y" -%}
+                        {{post.date | date: date_format}} - {{post.category | default: News}}
                     </div>
                 </h3>
                 {{ post.excerpt }}
