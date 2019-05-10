@@ -1,4 +1,4 @@
-<div class="ui container">
+<div class="ui container" id="archive">
     <h1 class="ui center aligned header">All {{include.scopeName}}</h1>
     {%- for post in include.scope -%}
         {%- assign date_format = site.date_format | default: "%b %e, %Y" -%}
@@ -16,7 +16,27 @@
             <div class="content">
                 <a href="{{ post.url }}" class="header">{{post.title | escape}}</a>
                 <div class="meta">{{post.date | date: date_format }}</div>
-                <div class="description">{{post.excerpt}}</div>
+                <div class="description">
+                    {%- if post.description -%}
+                        {{post.description}}
+                    {%- else condition -%}
+                        {{post.excerpt}}
+                    {%- endif -%}
+                </div>
+                <div class="extra">
+                    {%- if post.category.size > 0 -%}
+                    <div class="ui teal label">
+                        {{post.category | escape}}
+                        <div class="detail"><i class="icon folder"></i></div>
+                    </div>
+                    {%- endif -%}
+                    {%- if post.tags.size > 0 -%}
+                    <div class="ui blue label">
+                        {% for tag in post.tags %} {{tag | prepend: "#" | append: " "}} {% endfor %}
+                        <div class="detail"><i class="icon tags"></i></div>
+                    </div>
+                    {%- endif -%}
+                </div>
             </div>
         </div>
         {% if forloop.last %}</div>{% endif %}

@@ -117,13 +117,15 @@ body > .container{
 }
 #posts,
 #videos,
-#demos{
+#demos,
+#archive{
     .sub.header{
         margin:1em auto;
         .label:first-of-type{
             margin-left: 0;
         }
     }
+    .items>.item>.content>.header{color:$secondary}
     article .image{margin-bottom: 1em;}
     .teal:not(i){background-color: $mountain-meadow !important}
     .blue:not(i){background-color: $medium-slate-blue !important}
