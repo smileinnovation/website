@@ -39,8 +39,8 @@ fields:
   label: layout
   default: post
 pages:
-- _demos/2019-04-19-voice-commerce-with-magento--snips.markdown
 - _demos/2019-04-19-multiplication-table-with-snips.markdown
-- _demos/2019-04-19-live-tracking-with-computer-vision.markdown
 - _demos/2019-04-19-talking-to-your-coffee-machine-with-snips.markdown
 - _demos/2019-04-19-asset-tracking-truck.markdown
+- _demos/2019-04-19-live-tracking-with-computer-vision.markdown
+- _demos/2019-04-19-voice-commerce-with-magento--snips.markdown
