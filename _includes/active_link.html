@@ -1,0 +1,9 @@
+
+{% assign currentPage = page.url  | split: ".html" | first %}
+{% assign targetPage = include.href | prepend: site.baseurl %}
+
+{%- if currentPage == targetPage  -%}
+<a href="{{ site.baseurl }}{{include.href}}" class="active item">{{include.title}}</a>
+{%- else -%}
+<a href="{{ site.baseurl }}{{include.href}}" class="item">{{include.title}}</a>
+{%- endif -%}
