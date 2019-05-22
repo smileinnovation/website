@@ -17,14 +17,12 @@ title: Smile's Innovation
 email: thibault.milan@smile.eu
 author: Smile Innovation
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Innovation Department at Smile, working on computer vision, machine learning, artificial intelligence, IoT, and a lot of other amazing topics. We are pushing forward new tech and explore, investigate, find new use cases for our clients.
 footer_legal_note: >-
   &copy; 2019 Smile. We do not track you (yet) with any Analytics tools.
   If you want to report anything, please write to thibault.milan@smile.fr .
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://innovation.smile.eu" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://innovation.smile.eu" # the base hostname & protocol for your site, e.g. http://example.com
 date_format: "%b %e, %Y"
 
 twitter:
