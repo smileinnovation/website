@@ -44,7 +44,7 @@ layout: default
     {% endif %}
     <div class="e-content" itemprop="articleBody">
         {% if page.description %}
-        {{page.description | escape}}
+        <p>{{page.description | escape}}</p>
         {% endif %}
         {{content}}
     </div>
