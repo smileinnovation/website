@@ -2,7 +2,7 @@
 layout: post
 title: "DevOps D Day with Patrice Ferlet"
 date: "2019-05-22 20:49:03 +0200"
-category: Event
+category: Events
 youtube_url: https://www.youtube.com/watch?v=V3AWp3QwBYg
 tags: [DevOps]
 ---
