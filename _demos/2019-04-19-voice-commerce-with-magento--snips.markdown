@@ -10,3 +10,8 @@ author: fadew
 lang: en_US
 
 ---
+Continuing our experimentation with [Snips](http://snips.ai) we released a very promising integration with Magento to enable voice commerce becoming a reality.
+
+User can now start shopping using their home assistant in the morning, continue at work from his desktop on the Magento website and do a last check in public transportation from his app, using touch interface or his voice, at his convenience.
+
+Want to see the prototype ? [Contact us](mailto:fabrice.dewasmes@smile.eu).

@@ -8,3 +8,10 @@ author: alrou
 lang: en_US
 
 ---
+Ok, for this one, we followed our ingenious friends at [Snips](http://snips.ai) which made a pretty awesome job when it comes to hack your daily-life appliance and put locally proceed, private-by-design, voice commands into it.
+
+Available in Smile Switzerland, this demo feature a coffee maker you can command by voice.
+
+Video coming soon ...
+
+[Contact us to get more infos about the demo](mailto:fabrice.dewasmes@smile.eu).
