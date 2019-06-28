@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 footer_legal_note: >-
   &copy; 2019 Smile. We do not track you (yet) with any Analytics tools.
   If you want to report anything, please write to thibault.milan@smile.fr .
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://innovation.smile.eu" # the base hostname & protocol for your site, e.g. http://example.com
 date_format: "%b %e, %Y"
 
@@ -46,7 +46,6 @@ webmaster_verifications:
 lang: en_US
 
 # Build settings
-markdown: kramdown
 sass:
     style: compressed
 plugins:
