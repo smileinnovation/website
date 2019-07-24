@@ -11,8 +11,7 @@ With 79 billion euros, it’s not maybe the biggest investment made in R&D in a 
 
 There are 3 pillars in H2020 (Excellent Science, Industrial Leadership and Better Society) which are well described in the following video.
 
-{% youtube https://www.youtube.com/watch?v=CimJI88c4fE %}
-
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CimJI88c4fE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What’s AI4EU, the EU initiative to get back their sovereignty in the A.I. game?
 
