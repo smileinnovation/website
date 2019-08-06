@@ -9,6 +9,6 @@ charte:
     of the Smile's branding. Check-out with the marketing & communication team to
     get the corporate identity PDF.
 intro_headline: Any sufficiently advanced tech. is indistinguishable from magic.
-intro_text: As the Smile Innovation Department, we working on computer vision, machine learning, artificial intelligence, IoT, and a lot of other amazing topics. We are pushing forward new tech and explore, investigate, find new use cases for our clients.
+intro_text: As the Smile Innovation Department, we are working on computer vision, machine learning, artificial intelligence, IoT, and a lot of other amazing topics. We are pushing forward new tech and we explore, investigate and find new use cases for our clients.
 
 ---
