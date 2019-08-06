@@ -5,6 +5,6 @@ author:
   title: "Sales Director"
   company: 'Snips '
   name: "Nicolas Baron"
-  image: https://media.licdn.com/dms/image/C5603AQFf5LqADZQVvA/profile-displayphoto-shrink_800_800/0?e=1563408000&v=beta&t=onvkpARmB9bSCrsY730tb6wRUvEq2Nb8UWwPliKtnpY
+  image: uploads/2019/08/06/0.jpg
 
 ---
