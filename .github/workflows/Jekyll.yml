@@ -20,15 +20,3 @@ jobs:
         bundle exec jekyll build
     - name:           Install awscli with pip
       run:            pip3 install awscli --upgrade --user
-    - name:           Create aws credential file
-      run:            |
-      touch ~/.aws/credentials
-      echo "\n[default]\n" >> ~/.aws/credentials
-      echo "aws_access_key_id=${{secret.AWS_ACCESS_KEY_ID}}\n" >> ~/.aws/credentials
-      echo "aws_secret_access_key=${{secret.AWS_SECRET_ACCESS_KEY}}" >> ~/.aws/credentials
-    - name:           Create aws config file
-      run :           |
-      touch ~/.aws/config
-      echo "\n[default]\nregion=us-east-1\noutput=json" >> ~/.aws/config
-    - name:           Send the files to S3 bucket ${{secret.AWS_S3_BUCKET}}
-      run :           aws s3 cp _site s3://${{secret.AWS_S3_BUCKET}}/deploy_test --recursive
