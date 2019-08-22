@@ -20,8 +20,7 @@ jobs:
         bundle exec jekyll build
     - name:           Deploy to AWS
       uses:           actions/aws/cli@master$
-      run:            |
-      s3 cp _site s3://${{secret.AWS_S3_BUCKET}}/deploy_test --recursive
+      run:            s3 cp _site s3://${{secret.AWS_S3_BUCKET}}/deploy_test --recursive
       with:
           secret:
           - ${{secret.AWS_ACCESS_KEY_ID}}
