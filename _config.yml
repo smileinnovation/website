@@ -13,28 +13,28 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Smile's Innovation
-email: thibault.milan@smile.eu
-author: Smile Innovation
-description: >- # this means to ignore newlines until "baseurl:"
+title:                   Smile's Innovation
+email:                   thibault.milan@smile.eu
+author:                  Smile Innovation
+description:             >- # this means to ignore newlines until "baseurl:"
   Innovation Department at Smile, working on computer vision, machine learning, artificial intelligence, IoT, and a lot of other amazing topics. We are pushing forward new tech and explore, investigate, find new use cases for our clients.
-footer_legal_note: >-
+footer_legal_note:       >-
   &copy; 2019 Smile. We do not track you (yet) with any Analytics tools.
   If you want to report anything, please write to thibault.milan@smile.fr .
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://innovation.smile.eu" # the base hostname & protocol for your site, e.g. http://example.com
-date_format: "%b %e, %Y"
+baseurl:                 "/" # the subpath of your site, e.g. /blog
+url:                     "https://innovation.smile.eu" # the base hostname & protocol for your site, e.g. http://example.com
+date_format:             "%b %e, %Y"
 
 twitter:
-    username : groupesmile
-    card: sumary
+    username :           groupesmile
+    card:                sumary
 facebook:
     app_id:
     publisher:
     admins:
 logo:
 social:
-    medium: smileinnovation
+    medium:              smileinnovation
     youtube:
     newsletter:
 webmaster_verifications:
@@ -43,12 +43,12 @@ webmaster_verifications:
     alexa:
     yandex:
     baidu:
-lang: en_US
+lang:                    en_US
 
 # Build settings
-markdown: kramdown
+markdown:                kramdown
 sass:
-    style: compressed
+    style:               compressed
 plugins:
   - jekyll-feed
   - jekyll-paginate
@@ -60,13 +60,13 @@ plugins:
 # Collection configuration
 collections:
     videos:
-        output: true
+        output:          true
     demos:
-        output: true
+        output:          true
     projects:
-        output: true
+        output:          true
     quotes:
-        output: false
+        output:          false
 
 # Atom Related configuration
 atom:
@@ -79,9 +79,12 @@ atom:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+     - s3_website.yml
+     - README.md
+     - LICENSE
+     - Gemfile
+     - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
