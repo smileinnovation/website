@@ -12,8 +12,30 @@ Nearly one year ago, we ran our annual hackathon at Smile. A good real hackathon
 During this hackathon, emerged, along with other brilliant ideas, what would become KODA a couple of weeks later. The idea is pretty neat. Using computer vision to "read" sign language and translate it to text, then speak it out loud using speech synthesis.
 
 ## Some stats
+<div class="ui two statistics">
+    <div class="orange statistic">
+        <div class="text value">
+        370<br>
+        millions
+        </div>
+        <div class="label">
+        deaf or hearing-impaired<br/> people in the world
+        </div>
+    </div>
+    <div class="orange statistic">
+        <div class="text value">
+        7<br>
+        millions
+        </div>
+        <div class="label">
+        in France <i class="fr flag"></i>
+        </div>
+    </div>
+</div>
+<br>
 
 There are around 370 millions deaf or hearing-impaired people in the world, according to numbers. Unfortunately, there are only 15 fully LSF (Langue des Signes Française, French Sign Language) scholar establishments for the 7 millions deaf or hearing-impaired people in France. With 1/1000 new born with hearing-impairment, it’s not enough. Nowadays, 200 000 people are signing in France and, for half of them, it’s their primary language used on a daily basis.
+
 
 ## Current solutions
 
