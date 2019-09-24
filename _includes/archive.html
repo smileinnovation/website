@@ -18,9 +18,9 @@
                 <div class="meta">{{post.date | date: date_format }}</div>
                 <div class="description">
                     {%- if post.description -%}
-                        {{post.description}}
+                        {{post.description |strip_html }}
                     {%- else condition -%}
-                        {{post.excerpt}}
+                        {{post.excerpt | strip_html}}
                     {%- endif -%}
                 </div>
                 <div class="extra">
