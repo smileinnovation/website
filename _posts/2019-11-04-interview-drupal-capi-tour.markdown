@@ -33,6 +33,23 @@ Each agency has at least two delegates. And a monthly time-budget is allocated f
 
 Pragmatically, we have two Gitlab projects. One private for Michaël, myself and the delegates. Where we organize the contribution and the tools people can use. The other one is public-facing. People using Drupal can track public issues on drupal.org, suggest new module ideas, ask for help, etc. It also has a Wiki to easily find information on how to contribute.
 
+<div class="ui segment">
+    <div class="ui three statistics">
+        <div class="blue statistic">
+            <div class="value">157</div>
+            <div class="label">Smilians</div>
+        </div>
+        <div class="blue statistic">
+            <div class="value">94</div>
+            <div class="label">issues solved</div>
+        </div>
+        <div class="blue statistic">
+            <div class="value">#59</div>
+            <div class="label">Worldwide rank</div>
+        </div>
+    </div>
+</div>
+
 **What are the next steps after touring the different agencies?**
 
 <span class="ui image label"><img src="/uploads/2019/11/4/Michael.jpg" alt="">Michael</span> First, I have to say that the tour has been a huge success in terms of engagement, motivation, and fun. Today, our results are incredible compared to our situation on March 1st :
