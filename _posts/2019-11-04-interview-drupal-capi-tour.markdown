@@ -9,13 +9,11 @@ image: /uploads/2019/11/4/ben-kolde-FaPxZ88yZrw-unsplash.jpg
 ---
 **Hey guys, how are you? It’s a pleasure to meet you. You are both working on the Drupal Capitalization at Smile, under the patronage of the Direction de l’Innovation. First guys, tell us about your career at Smile and how you got here, bonus question, where are you from?**
 
-<span class="ui image label"><img src="/uploads/2019/11/4/Florent.jpg" alt="">Florent</span>
 I am <span class="ui image label"><img src="/uploads/2019/11/4/Florent.jpg" alt="">Florent Torregrosa</span>, currently tech expert 1 in Drupal at Smile’s Marseille agency. I have been working at Smile since December 2013, minus a short shift in 2016. I started working at Smile as a development engineer and quickly have grown as a tech lead.
 
 I started using Drupal in 2011, in my engineering school for the school’s students association and my end-of-study internship. The following year, I started to get involved in the Drupal community, I attended many Drupal meetups, furthermore, I also attended and organized DrupalCamps and different Drupal events. I also contributed to translations, modules, patches, and got involved in the French Drupal association board, etc.
 
-
-<span class="ui image label"><img src="/uploads/2019/11/4/Michael.jpg" alt="">Michael</span> I’m <span class="ui image label"><img src="/uploads/2019/11/4/Michael.jpg" alt="">Michael Fanini</span>, 36 years old, I began my career as a student in Operational Research and after trying out different jobs, I am now a pre-sales consultant at Smile and a Product Owner of our contribution to Drupal.
+I’m <span class="ui image label"><img src="/uploads/2019/11/4/Michael.jpg" alt="">Michael Fanini</span>, 36 years old, I began my career as a student in Operational Research and after trying out different jobs, I am now a pre-sales consultant at Smile and a Product Owner of our contribution to Drupal.
 
 **We already know about the Magento Capitalization and the amazing job Romain Ruaud is doing there. Tell us about your role in the Drupal Capitalization and how you’re interacting with each other.**
 
