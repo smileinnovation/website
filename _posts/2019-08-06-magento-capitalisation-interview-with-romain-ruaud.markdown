@@ -2,6 +2,8 @@
 layout: post
 title: "Magento Capitalisation: Interview with Romain Ruaud"
 date: "2019-08-06 19:40:36 +0200"
+tags: [Magento, Interview, Capitalization]
+category: Interviews
 ---
 **Hey Romain, nice to meet you. So you are in charge of the capitalization for Smile at the request of the direction de l’innovation. Can you tell me first a bit about you? Your path at Smile and maybe before.**
 

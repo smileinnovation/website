@@ -2,6 +2,8 @@
 layout: post
 title: "AI4EU, the H2020 initiative for a sovereign AI platform in Europe"
 date: "2019-07-24 17:28:42 +0200"
+tags: [Europe, AI, platform]
+author: thmil
 ---
 ## Meet Horizon 2020, the brand new E.U. R&D program
 
