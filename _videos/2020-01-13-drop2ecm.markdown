@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Drop2ECM"
+date: "2020-01-13 10:41:49 +0100"
+description: Makes two ECM solutions work together never been so simple, cutomizable and entirely secured.
+author: thmil
+lang: en_US
+youtube_url: https://www.youtube.com/watch?v=SvV3PLZOBek
+---
+Creating digital and interconnected documents never been more important than today. Stored in aging document managment solutions, which don't evolve to meet the user needs. Those solutions limitations push users to get their own tools, escaping corporate managment process.
+
+However, to avoid it, transfering document from on system to an ECM prove to be incredibly complex. It's not only about migrating documents, but also their ordering structure, their access rights, metadatas and their history. How then easy this data migration, most of the time costly, time consuming and complex?
+
+Smile offers you this simple migration tool, able to go from and to a ECM and communicating through a set of gateway. Based on an abstraction language, its engine transfer and synchronize parts or everything of the two systems and can handle huge daily data feeds.
+
+Makes two ECM solutions work together never been so simple, cutomizable and entirely secured. Smile is more than happy to share with you this **multiplatform and open source** module. And for your dedicated and tailormade needs, Smile can help you for customize, integrate and migrate your systems.
