@@ -1,11 +1,14 @@
 ---
 layout: post
-title: "Drupal Entity Visibility Preview"
-date: "2020-02-03 17:07:26 +0100"
-description: At the end of 2019, we developed a Drupal 8 module called Entity visibility preview. Let's dive together on what you can do with this module.
+title: Drupal Entity Visibility Preview
+date: 2020-02-03 17:07:26 +0100
+description: At the end of 2019, we developed a Drupal 8 module called Entity visibility
+  preview. Let's dive together on what you can do with this module.
 author: fltor
 lang: en_US
 youtube_url: https://youtu.be/hF-Lzroc7NU
+image: ''
+
 ---
 At the end of 2019, we developed a Drupal 8 module called [Entity visibility preview](https://www.drupal.org/project/entity_visibility_preview).
 
