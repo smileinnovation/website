@@ -8,36 +8,57 @@ fields:
   label: Project Name
   config:
     required: true
-- type: datetime
-  name: date
-  label: Date
+- name: description
+  type: textarea
+  default: ''
   config:
-    required: true
-  default: now
-- type: text
-  name: description
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
   label: Description
 - name: image
   type: file
   config:
     maxSize: 250
   label: Image
-- type: text
-  name: author
+- name: author
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: config
+      file: _data/authors.yml
+      path: 
   label: Author
-  description: Use the your shortname, it will be matched with our data/members.yml
+- type: datetime
+  name: date
+  label: Date
   config:
     required: true
-- type: text
-  name: lang
-  label: Language
+  default: now
+- name: lang
+  type: select
+  default: en_EN
   config:
     required: true
-  default: en
+    options:
+    - fr_FR
+    - en_EN
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Language of this content
 - type: text
   name: layout
   label: layout
   default: post
+  hidden: true
 pages:
 - _demos/2019-04-19-asset-tracking-truck.markdown
 - _demos/2019-04-19-live-tracking-with-computer-vision.markdown
