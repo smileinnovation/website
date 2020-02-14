@@ -33,8 +33,8 @@ sections:
   create: all
   match: "**/*"
 - type: document
-  path: _config.yml
-  label: Config
+  path: _data/authors.yml
+  label: Authors
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
