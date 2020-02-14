@@ -47,6 +47,7 @@ fields:
     required: true
     options:
     - fr_FR
+    - en_US
     source:
       type: simple
       section: 
