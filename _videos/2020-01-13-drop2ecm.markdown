@@ -1,11 +1,14 @@
 ---
 layout: post
-title: "Drop2ECM"
-date: "2020-01-13 10:41:49 +0100"
-description: Makes two ECM solutions work together never been so simple, cutomizable and entirely secured.
+title: Drop2ECM
+date: 2020-01-13 10:41:49 +0100
+description: Makes two ECM solutions work together never been so simple, cutomizable
+  and entirely secured.
 author: thmil
 lang: en_US
 youtube_url: https://www.youtube.com/watch?v=SvV3PLZOBek
+image: ''
+
 ---
 Creating digital and interconnected documents never been more important than today. Stored in aging document managment solutions, which don't evolve to meet the user needs. Those solutions limitations push users to get their own tools, escaping corporate managment process.
 
