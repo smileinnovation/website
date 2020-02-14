@@ -22,25 +22,32 @@ fields:
   config:
     maxSize: 250
   label: Image
-- type: text
-  name: author
-  label: Author (you?)
-- type: text
-  name: lang
+- name: lang
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - en_US
+    - fr_FR
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: Language of this post
-  default: en
 - type: text
   name: layout
   label: layout
-- name: authors
+- name: author
   type: select
   default: []
   config:
     required: false
     options: []
     source:
-      type: pages
+      type: documents
       section: config
-      file: 
-      path: 
-  label: authors
+      file: _data/authors.yml
+      path: ''
+  label: Author
