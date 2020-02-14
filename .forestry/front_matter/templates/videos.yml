@@ -3,20 +3,32 @@ label: Videos
 hide_body: true
 fields:
 - type: text
-  name: youtube_url
-  label: Youtube URL
-  config:
-    required: true
-- type: text
   name: title
   label: Title
 - type: datetime
   name: date
   label: Date
   default: now
+- type: text
+  name: youtube_url
+  label: Youtube URL
+  config:
+    required: true
 - type: textarea
   name: description
   label: Description
+- name: author
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: config
+      file: _data/authors.yml
+      path: ''
+  label: Author
 - name: image
   type: file
   config:
@@ -39,15 +51,3 @@ fields:
 - type: text
   name: layout
   label: layout
-- name: author
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: documents
-      section: config
-      file: _data/authors.yml
-      path: ''
-  label: Author
