@@ -32,3 +32,15 @@ fields:
 - type: text
   name: layout
   label: layout
+- name: authors
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: config
+      file: 
+      path: 
+  label: authors
