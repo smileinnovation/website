@@ -51,3 +51,5 @@ fields:
 - type: text
   name: layout
   label: layout
+pages:
+- _videos/2019-04-19-sign-language-recognation-in-browser.markdown
