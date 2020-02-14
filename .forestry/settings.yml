@@ -27,11 +27,6 @@ sections:
   label: Quotes
   create: all
   match: "**/*"
-- type: directory
-  path: _projects
-  label: Projects
-  create: all
-  match: "**/*"
 - type: document
   path: _data/authors.yml
   label: Authors
