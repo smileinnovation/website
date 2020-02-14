@@ -4,31 +4,31 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: Heading
   config:
     required: true
+  label: Main part of the quote
 - type: datetime
   name: date
-  label: Post Date
+  label: Quote Date
   config:
     display_utc: false
     required: true
   default: now
 - type: field_group
   name: author
-  label: author
+  label: Author
   fields:
+  - type: text
+    name: name
+    label: Name
+    config:
+      required: true
   - type: text
     name: title
     label: Position
   - type: text
     name: company
     label: Company
-    config:
-      required: true
-  - type: text
-    name: name
-    label: Name
     config:
       required: true
   - name: image
@@ -40,6 +40,7 @@ fields:
 - type: text
   name: layout
   label: layout
-  default: post
+  default: quotes
+  hidden: true
 pages:
 - _quotes/2019-04-25-florence.markdown
