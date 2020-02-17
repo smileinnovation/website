@@ -8,11 +8,12 @@ on:
 
 jobs:
   build:
-
+    name:             Building website with Jekyll
     runs-on:          ubuntu-latest
 
     steps:
-    - uses:           actions/checkout@v1
+    - name:           Checkout out project
+      uses:           actions/checkout@v1
     - name:           Set up Ruby 2.6
       uses:           actions/setup-ruby@v1
       with:
@@ -28,6 +29,7 @@ jobs:
         name: generated_site
         path: _site
   deploy:
+    name: Deploying to AWS
     needs: [build]
     runs-on: ubuntu-latest
     steps:
@@ -36,8 +38,8 @@ jobs:
         with:
           name: generated_site
           path: _site
-      - uses: actions/checkout@master
-      - uses: jakejarvis/s3-sync-action@master
+      - name: Run AWS Cli to sync content
+        uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
