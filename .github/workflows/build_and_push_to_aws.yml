@@ -1,4 +1,4 @@
-name:                 Jekyll install and site build
+name:                 Jekyll site build & AWS deploy
 
 on:
   push:
@@ -28,6 +28,7 @@ jobs:
         name: generated_site
         path: _site
   deploy:
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact
