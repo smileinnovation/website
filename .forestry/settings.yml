@@ -43,7 +43,6 @@ sections:
 - type: document
   path: _data/logos.json
   label: Logos
-  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
