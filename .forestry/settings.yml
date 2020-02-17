@@ -19,18 +19,24 @@ sections:
 - type: directory
   path: _demos
   label: Demos
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - project
 - type: directory
   path: _videos
   label: Videos
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - videos
 - type: directory
   path: _quotes
   label: Quotes
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - testimonial
 - type: document
   path: _data/authors.yml
   label: Authors
