@@ -32,7 +32,7 @@ jobs:
     name:                        Deploying to AWS
     needs:                       [build]
     runs-on:                     ubuntu-latest
-    
+
     steps:
       - name:                    Checkout out project
         uses:                    actions/checkout@v1
@@ -42,11 +42,11 @@ jobs:
           name:                  generated_site
           path:                  _site
       - name:                    Run AWS Cli to sync content
-        uses:                    jakejarvis/s3-sync-action@master
+        uses:                    justinharringa/actions-s3_website@v1.0
         with:
-          args:                  --acl public-read --follow-symlinks --delete
+          args:                  push --site $SOURCE_DIR
         env:
-          AWS_S3_BUCKET:         ${{ secrets.AWS_S3_BUCKET }}
+          S3_BUCKET:             ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID:     ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'eu-west-1'   # optional: defaults to us-east-1
