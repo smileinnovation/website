@@ -1,4 +1,68 @@
 ---
 label: _default
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: date
+  type: datetime
+  label: Published Date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  hidden: false
+  default: now
+- name: category
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - Events
+    - Interviews
+    - PR
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category (optional)
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+- name: youtube_url
+  type: text
+  config:
+    required: false
+  label: Youtube video URL (optional)
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Hero picture
+- name: author
+  type: select
+  default: []
+  config:
+    required: true
+    options: []
+    source:
+      type: documents
+      section: config
+      file: _data/authors.yml
+      path: 
+  label: Author
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  hidden: true
+  default: post
