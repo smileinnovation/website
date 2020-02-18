@@ -66,3 +66,5 @@ fields:
   label: layout
   hidden: true
   default: post
+pages:
+- _videos/ai4eu-building-the-european-ai-on-demand-platform.md
