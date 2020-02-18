@@ -1,6 +1,6 @@
 ---
 date: 2020-02-18 10:41:38 +0000
-author: thmil
+author: fadew
 lang: en_US
 title: Fabrice Dewasmes, Innovation Director interview at P.O.S.S.
 youtube_url: https://www.youtube.com/watch?v=_qrKJLyRaWA
