@@ -18,30 +18,6 @@ fields:
     display_utc: false
   hidden: false
   default: now
-- name: category
-  type: select
-  default: ''
-  config:
-    required: false
-    options:
-    - Events
-    - Interviews
-    - PR
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Category (optional)
-- name: tags
-  type: tag_list
-  default: []
-  label: Tags
-- name: youtube_url
-  type: text
-  config:
-    required: false
-  label: Youtube video URL (optional)
 - name: image
   type: file
   config:
