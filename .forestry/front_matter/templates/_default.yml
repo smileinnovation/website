@@ -59,6 +59,20 @@ fields:
       file: _data/authors.yml
       path: 
   label: Author
+- name: lang
+  type: select
+  default: en_US
+  config:
+    required: true
+    options:
+    - en_US
+    - fr_FR
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Language of the content
 - name: layout
   type: text
   config:
