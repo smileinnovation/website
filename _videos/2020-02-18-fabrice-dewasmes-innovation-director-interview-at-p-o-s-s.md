@@ -8,6 +8,6 @@ description: Fabrice have been interviewed about the missions of the Innovation 
   at Smile during Paris OpenSource Summit. Discover our values, projects and what's
   motivate us. Interview in French.
 image: ''
-layout: ''
+layout: 'post'
 
 ---

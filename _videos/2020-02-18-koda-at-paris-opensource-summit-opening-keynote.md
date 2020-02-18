@@ -8,6 +8,6 @@ description: 'Fabrice is talking about KODA, our project to translate french sig
   language in real time and vocalize it, to Paris OpenSource Summit end of 2019 during
   the opening keynote. The talk is in French. '
 image: ''
-layout: ''
+layout: 'post'
 
 ---
