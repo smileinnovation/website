@@ -3,56 +3,11 @@ label: Videos
 hide_body: false
 display_field: title
 fields:
-- type: text
-  name: title
-  label: Title
-- type: datetime
-  name: date
-  label: Date
-  default: now
-- type: text
-  name: youtube_url
-  label: Youtube URL
-  config:
-    required: true
-- type: textarea
-  name: description
-  label: Description
-- name: author
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: documents
-      section: config
-      file: _data/authors.yml
-      path: ''
-  label: Author
-- name: image
-  type: file
-  config:
-    maxSize: 250
-  label: Image
-- name: lang
-  type: select
-  default: []
-  config:
-    required: true
-    options:
-    - en_US
-    - fr_FR
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Language of this post
-- type: text
-  name: layout
-  label: layout
-  hidden: true
+- name: defaults
+  type: include
+  config: {}
+  template: _default
+  label: Defaults
 - name: video
   type: include
   config: {}
