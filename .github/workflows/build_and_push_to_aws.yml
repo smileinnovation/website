@@ -6,6 +6,36 @@ on:
     - master
 
 jobs:
+    build_sub_app:
+      name: Building contribution app with node
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v2.0.0
+          with:
+            repository: git@git.smile.fr:innovation/websites/internal-website-sso.git
+            ref: master
+            # Auth token used to fetch the repository. The token is stored in the local git config, which enables your scripts to run authenticated git commands. The post-job step removes the token from the git config.
+            token: ${{ secrets.GITLAB_TOKEN }}
+            # Whether to persist the token in the git config
+            persist-credentials: # optional, default is true
+            # Relative path under $GITHUB_WORKSPACE to place the repository
+            path: # optional
+            # Whether to execute `git clean -ffdx && git reset --hard HEAD` before fetching
+            clean: # optional, default is true
+            # Number of commits to fetch. 0 indicates all history.
+            fetch-depth: # optional, default is 1
+            # Whether to download Git-LFS files
+            lfs: true
+
+        - name: Upload artifact
+          uses: actions/upload-artifact@v1.0.0
+          with:
+            # Artifact name
+            name: contribute-app
+            # Directory containing files to upload
+            path: 
+            
   build:
     name:                        Building website with Jekyll
     runs-on:                     ubuntu-latest
