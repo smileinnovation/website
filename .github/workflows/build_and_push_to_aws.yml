@@ -10,23 +10,25 @@ jobs:
     name: Building contribution app with node
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.0.0
+      - name: Install Deploy Key
+        uses: pioug/la-cle@v1.0.0
         with:
-          repository: git@git.smile.fr:innovation/websites/internal-website-sso.git
-          ref: master
-          # Auth token used to fetch the repository. The token is stored in the local git config, which enables your scripts to run authenticated git commands. The post-job step removes the token from the git config.
-          token: ${{ secrets.GITLAB_TOKEN }}
-
+          # Private SSH key
+          GH_SSH_KEY: ${{ secrets.SSH_KEY }}
+      - name: Clone Smile Repo
+        run: git clone git@git.smile.fr:innovation/websites/internal-website-sso.git
+      - name: Build with NPM
+        run: GENERATE_SOURCEMAP=false PUBLIC_URL=https://innovation.smile.eu/candidate npm run build
       - name: Upload artifact
         uses: actions/upload-artifact@v1.0.0
         with:
           # Artifact name
-          name: contribute-app
+          name: contribute_app
           # Directory containing files to upload
-          path: ./
+          path: build
+          
+
   build:
-    
     name:                        Building website with Jekyll
     runs-on:                     ubuntu-latest
 
@@ -50,23 +52,27 @@ jobs:
 
   deploy:
     name:                        Deploying to AWS
-    needs:                       [build]
+    needs:                       [build,candidate_build]
     runs-on:                     ubuntu-latest
 
     steps:
-      - name:                    Download artifact
+      - name:                    Download website
         uses:                    actions/download-artifact@v1.0.0
         with:
           name:                  generated_site
-          path:                  _site
-      - name:                    Run AWS Cli to sync content
-        uses: jakejarvis/s3-sync-action@master
+      - name:                    Download candidate dashboard app
+        uses:                    actions/download-artifact@v1.0.0
         with:
-          args: --follow-symlinks --delete
+          name:                  contribute_app
+          path:                  contribute
+      - name:                    Run AWS Cli to sync content
+        uses:                    jakejarvis/s3-sync-action@master
+        with:
+          args:                  --follow-symlinks --delete
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'eu-west-1'   # optional: defaults to us-east-1
-          SOURCE_DIR: '_site'      # optional: defaults to entire repository
+          SOURCE_DIR: ''      # optional: defaults to entire repository
           DEST_DIR: '' # optional: default to bucket root
