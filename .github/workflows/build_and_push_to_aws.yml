@@ -30,7 +30,7 @@ jobs:
           # Artifact name
           name: contribute_app
           # Directory containing files to upload
-          path: build
+          path: internal-website-sso/build
           
 
   build:
