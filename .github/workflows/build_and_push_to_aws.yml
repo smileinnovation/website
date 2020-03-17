@@ -22,6 +22,7 @@ jobs:
       - name: Build with NPM
         run: |
           cd internal-website-sso
+          npm i
           GENERATE_SOURCEMAP=false PUBLIC_URL=https://innovation.smile.eu/candidate npm run build
       - name: Upload artifact
         uses: actions/upload-artifact@v1.0.0
