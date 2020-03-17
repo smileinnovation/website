@@ -19,9 +19,11 @@ jobs:
         run: ssh-keyscan git.smile.fr >> ~/.ssh/known_hosts
       - name: Clone Smile Repo
         run: git clone git@git.smile.fr:innovation/websites/internal-website-sso.git
-      - run: cd internal-website-sso
       - name: Build with NPM
-        run: GENERATE_SOURCEMAP=false PUBLIC_URL=https://innovation.smile.eu/candidate npm run build
+        run: |
+          cd internal-website-sso
+          ls
+          GENERATE_SOURCEMAP=false PUBLIC_URL=https://innovation.smile.eu/candidate npm run build
       - name: Upload artifact
         uses: actions/upload-artifact@v1.0.0
         with:
