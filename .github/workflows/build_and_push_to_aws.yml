@@ -62,12 +62,12 @@ jobs:
 
     steps:
       - name:                    Download website
-        uses:                    actions/download-artifact@v1.0.0
+        uses:                    actions/download-artifact@v4.1.7
         with:
           name:                  generated_site
           path:                  ./
       - name:                    Download candidate dashboard app
-        uses:                    actions/download-artifact@v1.0.0
+        uses:                    actions/download-artifact@v4.1.7
         with:
           name:                  contribute_app
           path:                  candidate
